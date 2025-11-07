@@ -1,0 +1,17 @@
+data:
+  symbol: "INFY.NS"
+  interval: "1h"
+  start_date: "2025-01-01"
+  end_date: null
+  api: "yfinance"
+
+paths:
+  raw: "data/raw/live_data.parquet"
+  versioned_dir: "data/versioned/"
+  logs: "logs/pipeline.log"
+  model_dir: "models/"
+
+pipeline:
+  dropna: true
+  resample: null   # e.g. "1H", "1D", or null to keep native frequency
+  timezone: "UTC"

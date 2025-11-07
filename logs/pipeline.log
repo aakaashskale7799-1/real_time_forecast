@@ -1,0 +1,16 @@
+2025-11-05 17:39:47.973 | INFO     | src.pipeline:run:22 - Pipeline run started.
+2025-11-05 17:39:47.976 | INFO     | src.data_fetcher:fetch:17 - Fetching INFY.NS interval=1h start=2023-01-01
+2025-11-05 17:39:57.374 | WARNING  | src.data_fetcher:fetch:20 - yfinance returned empty DataFrame.
+2025-11-05 17:39:57.393 | WARNING  | src.data_store:append_incremental:31 - append_incremental called with empty df; skipping.
+2025-11-05 17:40:43.458 | INFO     | src.pipeline:run:22 - Pipeline run started.
+2025-11-05 17:40:43.461 | INFO     | src.data_fetcher:fetch:17 - Fetching INFY.NS interval=1h start=2025-01-01
+2025-11-05 17:40:45.454 | INFO     | src.data_fetcher:fetch:27 - Fetched 1458 rows: 2025-01-01 03:45:00 -> 2025-11-04 09:45:00
+2025-11-05 17:40:45.667 | INFO     | src.data_store:save:23 - Saved raw -> data/raw/live_data.parquet, snapshot -> data\versioned\raw_20251105_121045.parquet
+2025-11-05 17:40:46.941 | INFO     | src.preprocessor:clean:22 - Dropped 0 NA rows from 'value'.
+2025-11-05 17:40:46.946 | INFO     | src.pipeline:run:29 - Pipeline run finished.
+2025-11-06 12:07:49.030 | INFO     | src.pipeline:run:22 - Pipeline run started.
+2025-11-06 12:07:49.033 | INFO     | src.data_fetcher:fetch:17 - Fetching INFY.NS interval=1h start=2025-01-01
+2025-11-06 12:07:57.980 | INFO     | src.data_fetcher:fetch:27 - Fetched 1461 rows: 2025-01-01 03:45:00 -> 2025-11-06 05:45:00
+2025-11-06 12:07:59.568 | INFO     | src.data_store:save:23 - Saved raw -> data/raw/live_data.parquet, snapshot -> data\versioned\raw_20251106_063759.parquet
+2025-11-06 12:07:59.606 | INFO     | src.preprocessor:clean:22 - Dropped 0 NA rows from 'value'.
+2025-11-06 12:07:59.607 | INFO     | src.pipeline:run:29 - Pipeline run finished.
