@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from .mlflow_tracker import MLflowTracker
 from loguru import logger
 from .prophet_model import ProphetModel
 from .evaluator import Evaluator
@@ -36,4 +37,7 @@ class Trainer:
         self.registry.register(model_path, metrics)
 
         logger.success(f"Training complete. Metrics: {metrics}")
+
+        tracker = MLflowTracker(experiment_name="ProphetForecasting")
+        tracker.log_metrics(metrics, model_path)
         return forecast, metrics
