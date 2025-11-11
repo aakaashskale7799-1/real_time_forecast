@@ -29,3 +29,31 @@
 2025-11-07 11:35:15.335 | SUCCESS  | src.model_registry:register:26 - Model version saved: models\registry\model_20251107_113515.pkl
 2025-11-07 11:35:15.337 | SUCCESS  | src.trainer:run:38 - Training complete. Metrics: {'RMSE': np.float64(24.772870853463775), 'MAPE': np.float64(1.2127567017118226)}
 2025-11-07 11:35:15.342 | SUCCESS  | __main__:<module>:21 - ✅ Model training, evaluation, visualization, and versioning complete.
+2025-11-11 16:05:17.543 | INFO     | __main__:<module>:17 - Starting model training...
+2025-11-11 16:05:17.552 | INFO     | src.trainer:run:20 - Initializing Prophet model...
+2025-11-11 16:05:25.690 | INFO     | src.prophet_model:train:17 - Training Prophet model...
+2025-11-11 16:05:30.040 | SUCCESS  | src.prophet_model:train:19 - Prophet model training complete.
+2025-11-11 16:05:30.272 | INFO     | src.prophet_model:save:33 - Model saved at models/prophet_model.pkl
+2025-11-11 16:05:30.299 | INFO     | src.prophet_model:forecast:23 - Forecasting next 24 periods...
+2025-11-11 16:05:31.990 | SUCCESS  | src.prophet_model:forecast:28 - Forecasting complete.
+2025-11-11 16:05:32.144 | INFO     | src.evaluator:evaluate:21 - RMSE: 24.7729, MAPE: 1.21%
+2025-11-11 16:05:43.407 | INFO     | src.visualizer:plot_static:25 - Static plot saved to models/forecast_plot.png
+2025-11-11 16:05:49.548 | INFO     | src.visualizer:plot_interactive:43 - Interactive plot saved to models/forecast_plot.html
+2025-11-11 16:05:49.596 | SUCCESS  | src.model_registry:register:26 - Model version saved: models\registry\model_20251111_160549.pkl
+2025-11-11 16:05:49.599 | SUCCESS  | src.trainer:run:39 - Training complete. Metrics: {'RMSE': np.float64(24.772870853463775), 'MAPE': np.float64(1.2127567017118226)}
+2025-11-11 16:05:51.344 | SUCCESS  | src.mlflow_tracker:log_metrics:19 - Metrics and model logged to MLflow.
+2025-11-11 16:05:51.359 | SUCCESS  | __main__:<module>:21 - ✅ Model training, evaluation, visualization, and versioning complete.
+2025-11-11 16:11:00.772 | INFO     | __main__:<module>:17 - Starting model training...
+2025-11-11 16:11:00.779 | INFO     | src.trainer:run:20 - Initializing Prophet model...
+2025-11-11 16:11:03.987 | INFO     | src.prophet_model:train:17 - Training Prophet model...
+2025-11-11 16:11:07.025 | SUCCESS  | src.prophet_model:train:19 - Prophet model training complete.
+2025-11-11 16:11:07.062 | INFO     | src.prophet_model:save:33 - Model saved at models/prophet_model.pkl
+2025-11-11 16:11:07.063 | INFO     | src.prophet_model:forecast:23 - Forecasting next 24 periods...
+2025-11-11 16:11:07.580 | SUCCESS  | src.prophet_model:forecast:28 - Forecasting complete.
+2025-11-11 16:11:07.595 | INFO     | src.evaluator:evaluate:21 - RMSE: 24.7729, MAPE: 1.21%
+2025-11-11 16:11:08.656 | INFO     | src.visualizer:plot_static:25 - Static plot saved to models/forecast_plot.png
+2025-11-11 16:11:10.171 | INFO     | src.visualizer:plot_interactive:43 - Interactive plot saved to models/forecast_plot.html
+2025-11-11 16:11:10.293 | SUCCESS  | src.model_registry:register:26 - Model version saved: models\registry\model_20251111_161110.pkl
+2025-11-11 16:11:10.295 | SUCCESS  | src.trainer:run:39 - Training complete. Metrics: {'RMSE': np.float64(24.772870853463775), 'MAPE': np.float64(1.2127567017118226)}
+2025-11-11 16:11:11.369 | SUCCESS  | src.mlflow_tracker:log_metrics:19 - Metrics and model logged to MLflow.
+2025-11-11 16:11:11.375 | SUCCESS  | __main__:<module>:21 - ✅ Model training, evaluation, visualization, and versioning complete.

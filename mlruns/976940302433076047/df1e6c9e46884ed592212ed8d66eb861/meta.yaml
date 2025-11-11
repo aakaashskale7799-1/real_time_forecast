@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/mlops/real_time_forecast/mlruns/976940302433076047/df1e6c9e46884ed592212ed8d66eb861/artifacts
+end_time: 1762857671372
+entry_point_name: ''
+experiment_id: '976940302433076047'
+lifecycle_stage: active
+run_id: df1e6c9e46884ed592212ed8d66eb861
+run_name: Run_20251111_161110
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762857670993
+status: 3
+tags: []
+user_id: user
