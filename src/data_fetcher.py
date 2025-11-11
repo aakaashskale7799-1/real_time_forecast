@@ -2,7 +2,7 @@ import pandas as pd
 import yfinance as yf
 from loguru import logger
 from typing import Optional
-
+# 8077439702
 class DataFetcher:
     def __init__(self, symbol: str, interval: str = "1h", start_date: Optional[str] = None):
         self.symbol = symbol

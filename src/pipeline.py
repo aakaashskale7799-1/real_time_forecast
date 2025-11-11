@@ -4,7 +4,7 @@ from src.data_fetcher import DataFetcher
 from src.data_store import DataStore
 from src.preprocessor import Preprocessor
 import pandas as pd
-
+# done
 class ForecastPipeline:
     def __init__(self, config_path: str = "config.yaml"):
         with open(config_path, "r") as f:
