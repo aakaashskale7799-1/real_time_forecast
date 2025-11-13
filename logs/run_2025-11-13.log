@@ -1,0 +1,20 @@
+2025-11-13 12:04:50.531 | INFO     | src.auto_retrainer:run_daily:25 - Starting automated daily retraining job...
+2025-11-13 12:04:50.563 | INFO     | src.pipeline:run:22 - Pipeline run started.
+2025-11-13 12:04:50.564 | INFO     | src.data_fetcher:fetch:17 - Fetching INFY.NS interval=1h start=2025-01-01
+2025-11-13 12:05:00.998 | INFO     | src.data_fetcher:fetch:27 - Fetched 1496 rows: 2025-01-01 03:45:00 -> 2025-11-13 05:45:00
+2025-11-13 12:05:03.025 | INFO     | src.data_store:save:23 - Saved raw -> data/raw/live_data.parquet, snapshot -> data\versioned\raw_20251113_063503.parquet
+2025-11-13 12:05:03.109 | INFO     | src.preprocessor:clean:22 - Dropped 0 NA rows from 'value'.
+2025-11-13 12:05:03.112 | INFO     | src.pipeline:run:29 - Pipeline run finished.
+2025-11-13 12:05:03.115 | INFO     | src.trainer:run:20 - Initializing Prophet model...
+2025-11-13 12:05:07.316 | INFO     | src.prophet_model:train:17 - Training Prophet model...
+2025-11-13 12:05:10.485 | SUCCESS  | src.prophet_model:train:19 - Prophet model training complete.
+2025-11-13 12:05:10.520 | INFO     | src.prophet_model:save:33 - Model saved at models/prophet_model.pkl
+2025-11-13 12:05:10.521 | INFO     | src.prophet_model:forecast:23 - Forecasting next 24 periods...
+2025-11-13 12:05:11.012 | SUCCESS  | src.prophet_model:forecast:28 - Forecasting complete.
+2025-11-13 12:05:11.021 | INFO     | src.evaluator:evaluate:21 - RMSE: 25.9326, MAPE: 1.27%
+2025-11-13 12:05:14.166 | INFO     | src.visualizer:plot_static:25 - Static plot saved to models/forecast_plot.png
+2025-11-13 12:05:18.032 | INFO     | src.visualizer:plot_interactive:43 - Interactive plot saved to models/forecast_plot.html
+2025-11-13 12:05:18.070 | SUCCESS  | src.model_registry:register:26 - Model version saved: models\registry\model_20251113_120518.pkl
+2025-11-13 12:05:18.071 | SUCCESS  | src.trainer:run:39 - Training complete. Metrics: {'RMSE': np.float64(25.93258200311492), 'MAPE': np.float64(1.2700621243648336)}
+2025-11-13 12:05:19.168 | SUCCESS  | src.mlflow_tracker:log_metrics:19 - Metrics and model logged to MLflow.
+2025-11-13 12:05:19.175 | SUCCESS  | src.auto_retrainer:run_daily:35 - Daily automation complete. Metrics: {'RMSE': np.float64(25.93258200311492), 'MAPE': np.float64(1.2700621243648336)}
